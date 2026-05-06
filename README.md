@@ -89,31 +89,20 @@ As etapas consideradas foram:
 ## 🔁 **Organização do Projeto**
 
 ```
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         case_nps and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-└── setup.cfg          <- Configuration file for flake8
+├── Makefile           <- Comandos de conveniência (ex: `make data` ou `make train`)
+├── README.md          <- Documentação principal do projeto (este arquivo)
+├── data               <- Dados originais 
+├── docs               <- Documentação adicional e apresentações (PDF/Canva)
+├── models             <- Modelos treinados e serializados (.pkl, .joblib)
+├── notebooks          <- Jupyter Notebooks seguindo a ordem lógica:
+│  ├── 1.0-entendimento-negocio.ipynb
+│  └── 2.0-eda-exploracao-dados.ipynb
+├── pyproject.toml     <- Configurações de pacotes e ferramentas
+├── references         <- Dicionários de dados, manuais e artigos de apoio
+├── reports            <- Análises geradas em PDF/HTML
+│  └── figures         <- Gráficos e visualizações para relatórios
+├── requirements.txt   <- Lista de dependências para reprodução do ambiente
+└── setup.cfg          <- Configuração de estilo de código (flake8)
 ```
 
 ---
@@ -122,7 +111,9 @@ As etapas consideradas foram:
 
 Para reproduzir as análises deste projeto, siga os passos abaixo:
 
-- Clone o repositório do GitHub
+- Clone o repositório do GitHub <br>
+``git clone https://github.com/seu-usuario/case-nps-preditivo.git`` <br>
+``cd case-nps-preditivo`` <br>
 - Garanta que o arquivo de dados esteja disponível na pasta `data/`
 - Instale as bibliotecas necessárias (pandas, numpy, matplotlib, seaborn, scikit-learn)
 - Acesse a pasta `notebooks/`
